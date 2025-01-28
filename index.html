@@ -46,7 +46,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[50.15182349895883,19.310510171942305],[50.45862310077107,20.011160570854006]]);
+        }).fitBounds([[50.15182682734139,19.310895046097105],[50.45862206016906,20.0107733315543]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -100,7 +100,7 @@
             abstract.show = function () {
                 this._div.classList.remove("abstract");
                 this._div.classList.add("abstractUncollapsed");
-                this._div.innerHTML = 'Zespół Parków Krajobrazowych Województwa Małopolskiego, 2025<br />';
+                this._div.innerHTML = 'Zespół Parków Krajobrazowych Woejwództwa Małopolskiego, 2025<br />';
         };
         abstract.addTo(map);
         var zoomControl = L.control.zoom({
